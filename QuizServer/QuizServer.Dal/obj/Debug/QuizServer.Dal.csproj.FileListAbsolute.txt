@@ -1,0 +1,7 @@
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal\bin\Debug\QuizServer.Dal.dll
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal\bin\Debug\QuizServer.Dal.pdb
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal\bin\Debug\QuizServer.Model.dll
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal\bin\Debug\QuizServer.Model.pdb
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal\obj\Debug\QuizServer.Dal.csprojResolveAssemblyReference.cache
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal\obj\Debug\QuizServer.Dal.dll
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal\obj\Debug\QuizServer.Dal.pdb

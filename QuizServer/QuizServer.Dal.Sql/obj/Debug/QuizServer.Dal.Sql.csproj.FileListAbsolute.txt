@@ -1,0 +1,14 @@
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal.Sql\bin\Debug\QuizServer.Dal.Sql.dll.config
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal.Sql\bin\Debug\QuizServer.Dal.Sql.dll
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal.Sql\bin\Debug\QuizServer.Dal.Sql.pdb
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal.Sql\bin\Debug\EntityFramework.dll
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal.Sql\bin\Debug\EntityFramework.SqlServer.dll
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal.Sql\bin\Debug\QuizServer.Dal.dll
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal.Sql\bin\Debug\QuizServer.Model.dll
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal.Sql\bin\Debug\QuizServer.Dal.pdb
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal.Sql\bin\Debug\QuizServer.Model.pdb
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal.Sql\bin\Debug\EntityFramework.xml
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal.Sql\bin\Debug\EntityFramework.SqlServer.xml
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal.Sql\obj\Debug\QuizServer.Dal.Sql.csprojResolveAssemblyReference.cache
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal.Sql\obj\Debug\QuizServer.Dal.Sql.dll
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Dal.Sql\obj\Debug\QuizServer.Dal.Sql.pdb

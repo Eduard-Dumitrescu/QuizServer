@@ -1,0 +1,4 @@
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Model\bin\Debug\QuizServer.Model.dll
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Model\bin\Debug\QuizServer.Model.pdb
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Model\obj\Debug\QuizServer.Model.dll
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Model\obj\Debug\QuizServer.Model.pdb

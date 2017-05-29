@@ -30,7 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Build.Framework" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,7 +42,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dtos\Answer.cs" />
+    <Compile Include="Dtos\Category.cs" />
+    <Compile Include="Dtos\Difficulty.cs" />
+    <Compile Include="Dtos\Exam.cs" />
+    <Compile Include="Dtos\Question.cs" />
+    <Compile Include="Dtos\QuestionType.cs" />
+    <Compile Include="Dtos\Test.cs" />
+    <Compile Include="Dtos\User.cs" />
+    <Compile Include="Dtos\UserAnswer.cs" />
+    <Compile Include="Dtos\UserSession.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
