@@ -10,7 +10,7 @@ namespace QuizServer.Model.Dtos
 
         public DateTime? LoggedOut { get; set; }
 
-        public bool? IsValid { get; set; }
+        public bool IsValid { get; set; }
 
         public Guid UserID { get; set; }
 

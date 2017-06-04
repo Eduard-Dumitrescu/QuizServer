@@ -52,11 +52,15 @@
     <Compile Include="Dtos\User.cs" />
     <Compile Include="Dtos\UserAnswer.cs" />
     <Compile Include="Dtos\UserSession.cs" />
+    <Compile Include="Models\MessageModel.cs" />
+    <Compile Include="Models\SessionData.cs" />
+    <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

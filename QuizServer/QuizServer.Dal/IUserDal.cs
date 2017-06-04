@@ -6,5 +6,6 @@ namespace QuizServer.Dal
     public interface IUserDal
     {
         List<User> GetAllUsers();
+        User GetUserByUsername(string username);
     }
 }

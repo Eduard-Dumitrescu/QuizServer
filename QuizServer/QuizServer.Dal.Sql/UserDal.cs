@@ -16,5 +16,14 @@ namespace QuizServer.Dal.Sql
                 return context.Users.Include("Exams").Include("UserSessions").ToList();
             }
         }
+
+        public User GetUserByUsername(string username)
+        {
+            using (var context = new QuizEntities())
+            {
+                return context.Users.FirstOrDefault(c => c.Email == username);
+            }
+        }
+
     }
 }
