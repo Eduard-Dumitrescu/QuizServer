@@ -54,6 +54,8 @@
     <Compile Include="Dtos\UserSession.cs" />
     <Compile Include="Models\MessageModel.cs" />
     <Compile Include="Models\SessionData.cs" />
+    <Compile Include="Models\TestModel.cs" />
+    <Compile Include="Models\UserDataModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

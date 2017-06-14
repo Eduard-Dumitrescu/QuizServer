@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Web.Http;
+using QuizServer.FilterAttribute;
 
 namespace QuizServer
 {
@@ -11,6 +12,7 @@ namespace QuizServer
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+            config.EnableCors();
 
             // Web API routes
             config.MapHttpAttributeRoutes();
@@ -21,10 +23,12 @@ namespace QuizServer
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            config.Routes.MapHttpRoute(
-                name: "Login",
-                routeTemplate: "api/{action}"
-            );
+            //config.Routes.MapHttpRoute(
+            //    name: "DefaultApiWithACtions",
+            //    routeTemplate: "api/{controller}/{action}"
+            //);
+
+            //config.Filters.Add(new AuthorizeAccess());
 
             var json = config.Formatters.JsonFormatter;
             json.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.Objects;

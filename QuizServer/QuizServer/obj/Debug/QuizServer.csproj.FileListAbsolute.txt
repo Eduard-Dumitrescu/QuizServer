@@ -93,10 +93,10 @@ D:\School\Licenta\QuizServer\QuizServer\QuizServer\bin\System.Web.WebPages.Razor
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\obj\Debug\QuizServer.csprojResolveAssemblyReference.cache
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\obj\Debug\QuizServer.dll
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\obj\Debug\QuizServer.pdb
-D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\roslyn\csc.rsp
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\ApplicationInsights.config
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\roslyn\csc.exe
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\roslyn\csc.exe.config
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\roslyn\csc.rsp
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\roslyn\csi.exe
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\roslyn\csi.exe.config
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\roslyn\csi.rsp
@@ -162,7 +162,9 @@ D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\QuizServer.Dal
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\QuizServer.Dal.Sql.dll
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\QuizServer.Model.dll
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\System.Net.Http.Formatting.dll
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\System.Web.Cors.dll
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\System.Web.Helpers.dll
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\System.Web.Http.Cors.dll
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\System.Web.Http.dll
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\System.Web.Http.WebHost.dll
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\System.Web.Mvc.dll
@@ -185,6 +187,7 @@ D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\Microsoft.AI.W
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\Microsoft.ApplicationInsights.xml
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\Newtonsoft.Json.xml
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\System.Web.Http.Cors.xml
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\System.Net.Http.Formatting.xml
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\System.Web.Helpers.xml
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\System.Web.Http.xml

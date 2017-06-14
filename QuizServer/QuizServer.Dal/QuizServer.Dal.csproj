@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ITestDal.cs" />
     <Compile Include="IUserDal.cs" />
     <Compile Include="IUserSessionDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
