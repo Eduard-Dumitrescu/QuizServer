@@ -1,17 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using QuizServer.Dal;
 using QuizServer.Dal.Sql;
 
 namespace QuizServer.Controllers
 {
+    [EnableCors("http://localhost:41093", "*", "*")]
     public class BaseController : ApiController
     {
-        private IUserSessionDal _userSessionDal;
+        protected IUserSessionDal _userSessionDal;
 
         public BaseController() : this(new UserSessionsDal())
         {

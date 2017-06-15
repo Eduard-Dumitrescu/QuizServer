@@ -26,6 +26,14 @@ namespace QuizServer.Dal.Sql
             }
         }
 
+        public User GetUserById(Guid id)
+        {
+            using (var context = new QuizEntities())
+            {
+                return context.Users.FirstOrDefault(c => c.Id.Equals(id));
+            }
+        }
+
         public User AddUser(Guid id,string email,Guid salt,string password,bool isAdmin)
         {
             using (var context = new QuizEntities())
@@ -41,6 +49,17 @@ namespace QuizServer.Dal.Sql
                 context.Users.Add(user);
                 context.SaveChanges();
                 return user;
+            }
+        }
+
+        public User DeleteUser(Guid id)
+        {
+            using (var context = new QuizEntities())
+            {
+                var user = context.Users.FirstOrDefault(c => c.Id == id);
+                var deletedUser = context.Users.Remove(user);
+                context.SaveChanges();
+                return deletedUser;
             }
         }
     }

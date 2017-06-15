@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -19,6 +20,8 @@ namespace QuizServer.Model.Dtos
         public string Name { get; set; }
 
         public int DifficultyID { get; set; }
+
+        public TimeSpan? Duration { get; set; }
 
         public virtual Difficulty Difficulty { get; set; }
 

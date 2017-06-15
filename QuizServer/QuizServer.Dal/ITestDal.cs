@@ -10,5 +10,6 @@ namespace QuizServer.Dal
     public interface ITestDal
     {
         List<Test> GetAllTests();
+        Test GetTestById(int id);
     }
 }

@@ -18,9 +18,8 @@ namespace QuizServer.Model.Dtos
 
         public Guid UserID { get; set; }
 
-        public DateTime StartTime { get; set; }
-
-        public TimeSpan Duration { get; set; }
+        public DateTime? StartTime { get; set; }
+        public DateTime? EndTime { get; set; }
 
         [StringLength(10)]
         public string Grade { get; set; }

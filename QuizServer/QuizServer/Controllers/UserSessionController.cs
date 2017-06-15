@@ -10,21 +10,8 @@ using QuizServer.Model.Models;
 
 namespace QuizServer.Controllers
 {
-    public class UserSessionController : ApiController
+    public class UserSessionController : BaseController
     {
-        private IUserSessionDal _userSessionDal;
-
-        public UserSessionController() :this(new UserSessionsDal())
-        {
-            
-        }
-
-        public UserSessionController(IUserSessionDal userSessionDal)
-        {
-            _userSessionDal = userSessionDal;
-        }
-
-
         public SessionData PostUserSession()
         {
             var authorization = Request.Headers.Authorization.ToString();

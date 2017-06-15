@@ -17,5 +17,13 @@ namespace QuizServer.Dal.Sql
                 return context.Tests.Include(c => c.Difficulty).ToList();
             }
         }
+
+        public Test GetTestById(int id)
+        {
+            using (var context = new QuizEntities())
+            {
+                return context.Tests.Include(c => c.Difficulty).FirstOrDefault(c => c.Id == id);
+            }
+        }
     }
 }

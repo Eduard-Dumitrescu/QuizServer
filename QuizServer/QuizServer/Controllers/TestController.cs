@@ -12,7 +12,6 @@ using QuizServer.Model.Models;
 
 namespace QuizServer.Controllers
 {
-    [EnableCors("http://localhost:41093", "*", "*")]
     public class TestController : BaseController
     {
         private ITestDal _testDal;
@@ -30,7 +29,7 @@ namespace QuizServer.Controllers
         [AuthorizeAccess]
         public HttpResponseMessage GetTests()
         {
-            var tests = _testDal.GetAllTests().Select(t => new TestModel() {Id = t.Id, Name = t.Name + " " + t.Difficulty.DifficultyLevel}).ToList();
+            var tests = _testDal.GetAllTests().Select(t => new {t.Id, t.Name,Difficulty = t.Difficulty.DifficultyLevel,NameLevel = t.Name + " - " + t.Difficulty.DifficultyLevel}).ToList();
   
             return Request.CreateResponse(HttpStatusCode.OK,tests);
         }

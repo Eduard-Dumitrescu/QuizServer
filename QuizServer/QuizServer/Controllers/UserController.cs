@@ -15,7 +15,6 @@ using QuizServer.Security;
 
 namespace QuizServer.Controllers
 {
-    [EnableCors("http://localhost:41093", "*", "*")]
     public class UserController : BaseController
     {
         private IUserDal _userDal;
@@ -97,5 +96,16 @@ namespace QuizServer.Controllers
 
             return Request.CreateResponse(HttpStatusCode.Created);
         }
+
+        [AuthorizeAccess]
+        public HttpResponseMessage DeleteUser([FromBody]UserDataModel model)
+        {
+            var exists = _userDal.GetUserById(model.UserId) != null;
+            if (!exists)
+                return Request.CreateResponse(HttpStatusCode.BadRequest, new { Message = "User doesn't exist" });
+            _userDal.DeleteUser(model.UserId);
+            return Request.CreateResponse(HttpStatusCode.OK, new { Message = "User deleted successfully" });
+        }
+
     }
 }
