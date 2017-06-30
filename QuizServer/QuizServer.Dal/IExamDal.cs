@@ -13,5 +13,6 @@ namespace QuizServer.Dal
         Exam AssignTestToUser(Guid userId, int testId);
         Exam GetExamById(int id);
         Exam GetExamByUserId(Guid userId);
+        Exam UpdateUserTest(Guid userId, int testId);
     }
 }

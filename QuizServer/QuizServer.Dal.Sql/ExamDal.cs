@@ -10,21 +10,6 @@ namespace QuizServer.Dal.Sql
 {
     public class ExamDal : IExamDal
     {
-        public Exam AssignTestToUser(Guid userId, int testId)
-        {
-            using (var context = new QuizEntities())
-            {
-                var exam = new Exam()
-                {
-                    UserID = userId,
-                    TestID = testId,
-                };
-                var savedExam = context.Exams.Add(exam);
-                context.SaveChanges();
-                return savedExam;
-            }
-        }
-
         public List<Exam> GetAllExams()
         {
             using (var context = new QuizEntities())
@@ -46,6 +31,32 @@ namespace QuizServer.Dal.Sql
             using (var context = new QuizEntities())
             {
                 return context.Exams.Include(c => c.Test).Include(c => c.User).FirstOrDefault(c => c.UserID == userId);
+            }
+        }
+
+        public Exam AssignTestToUser(Guid userId, int testId)
+        {
+            using (var context = new QuizEntities())
+            {
+                var exam = new Exam()
+                {
+                    UserID = userId,
+                    TestID = testId,
+                };
+                var savedExam = context.Exams.Add(exam);
+                context.SaveChanges();
+                return savedExam;
+            }
+        }
+
+        public Exam UpdateUserTest(Guid userId, int testId)
+        {
+            using (var context = new QuizEntities())
+            {
+                var exam = context.Exams.FirstOrDefault(c => c.UserID == userId && String.IsNullOrEmpty(c.Grade));
+                exam.TestID = testId;
+                context.SaveChanges();
+                return exam;
             }
         }
     }

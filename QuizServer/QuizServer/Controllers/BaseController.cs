@@ -5,10 +5,12 @@ using System.Web.Http;
 using System.Web.Http.Cors;
 using QuizServer.Dal;
 using QuizServer.Dal.Sql;
+using QuizServer.FilterAttribute;
 
 namespace QuizServer.Controllers
-{
+{ 
     [EnableCors("http://localhost:41093", "*", "*")]
+    [SslRequired]
     public class BaseController : ApiController
     {
         protected IUserSessionDal _userSessionDal;

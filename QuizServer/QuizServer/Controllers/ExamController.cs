@@ -51,8 +51,12 @@ namespace QuizServer.Controllers
                 return Request.CreateResponse(HttpStatusCode.BadRequest, new { Message = "Test not found" });
             var userExam = _examDal.GetExamByUserId(model.UserId);
 
-            if(userExam != null && String.IsNullOrEmpty(userExam.Grade))
-                return Request.CreateResponse(HttpStatusCode.BadRequest, new { Message = "User already has a test assigned" });
+            if (userExam != null && String.IsNullOrEmpty(userExam.Grade))
+            {
+                _examDal.UpdateUserTest(model.UserId, model.TestId);
+                return Request.CreateResponse(HttpStatusCode.Created, new { Message = "User was assigned test" });
+            }
+                
 
             _examDal.AssignTestToUser(model.UserId, model.TestId);
 
