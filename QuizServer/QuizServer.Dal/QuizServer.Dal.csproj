@@ -40,10 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAnswerDal.cs" />
     <Compile Include="ICategoryDal.cs" />
     <Compile Include="IDifficultyDal.cs" />
     <Compile Include="IExamDal.cs" />
+    <Compile Include="IQuestionDal.cs" />
+    <Compile Include="IQuestionTypeDal.cs" />
     <Compile Include="ITestDal.cs" />
+    <Compile Include="ITestWithQuestionsDal.cs" />
     <Compile Include="IUserDal.cs" />
     <Compile Include="IUserSessionDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -5,15 +5,11 @@ namespace QuizServer.Security
 {
     public class SHA512Encrypter
     {
-        /// <summary>
-        /// Converts an array of bytes into a hex sha512 string.
-        /// </summary>
-        /// <param name="temp">The temporary string to be hashed</param>
-        /// <returns>The sha512 hex string</returns>
-        public static string Encrypt(string what)
+       
+        public static string Encrypt(string data)
         {
             SHA512 shaM = new SHA512Managed();
-            byte[] hash = shaM.ComputeHash(Encoding.ASCII.GetBytes(what));
+            byte[] hash = shaM.ComputeHash(Encoding.ASCII.GetBytes(data));
 
             StringBuilder stringBuilder = new StringBuilder();
             foreach (byte b in hash)

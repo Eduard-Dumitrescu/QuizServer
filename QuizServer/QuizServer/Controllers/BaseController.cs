@@ -37,5 +37,15 @@ namespace QuizServer.Controllers
             var userSession = _userSessionDal.GetUserSessionById(new Guid(authorize.ToString()));
             return userSession != null && (userSession.User.IsAdmin && userSession.IsValid);
         }
+
+        [NonAction]
+        public bool AuthorizeUser()
+        {
+            var authorize = Request.Headers.Authorization;
+            if (authorize == null)
+                return false;
+            var userSession = _userSessionDal.GetUserSessionById(new Guid(authorize.ToString()));
+            return userSession != null && (!userSession.User.IsAdmin && userSession.IsValid);
+        }
     }
 }

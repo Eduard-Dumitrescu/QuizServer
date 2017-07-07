@@ -93,6 +93,7 @@ D:\School\Licenta\QuizServer\QuizServer\QuizServer\bin\System.Web.WebPages.Razor
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\obj\Debug\QuizServer.csprojResolveAssemblyReference.cache
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\obj\Debug\QuizServer.dll
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\obj\Debug\QuizServer.pdb
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\obj\Debug\QuizServer.csprojResolveAssemblyReference.cache
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\ApplicationInsights.config
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\roslyn\csc.exe
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\roslyn\csc.exe.config
@@ -198,6 +199,5 @@ D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\System.Web.Raz
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\System.Web.WebPages.xml
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\System.Web.WebPages.Deployment.xml
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\bin\System.Web.WebPages.Razor.xml
-D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\obj\Debug\QuizServer.csprojResolveAssemblyReference.cache
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\obj\Debug\QuizServer.dll
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer\obj\Debug\QuizServer.pdb

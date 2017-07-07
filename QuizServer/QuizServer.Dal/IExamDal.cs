@@ -14,5 +14,7 @@ namespace QuizServer.Dal
         Exam GetExamById(int id);
         Exam GetExamByUserId(Guid userId);
         Exam UpdateUserTest(Guid userId, int testId);
+        void StartTimerById(int id);
+
     }
 }

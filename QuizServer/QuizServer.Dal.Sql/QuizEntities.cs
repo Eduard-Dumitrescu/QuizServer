@@ -8,6 +8,7 @@ namespace QuizServer.Dal.Sql
         public QuizEntities()
             : base("name=QuizEntities")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
 
         public virtual DbSet<Answer> Answers { get; set; }

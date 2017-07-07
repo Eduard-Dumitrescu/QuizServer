@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace QuizServer.Model.Models
 {
-    public class DataModel
+    public class SubjectDataModel
     {
-        public string data { get; set; }
-        public int dataNumber { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public bool IsSelected { get; set; }
     }
 }

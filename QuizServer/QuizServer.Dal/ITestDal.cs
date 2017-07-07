@@ -11,5 +11,8 @@ namespace QuizServer.Dal
     {
         List<Test> GetAllTests();
         Test GetTestById(int id);
+        Test AddTest(string name,int difficultyId,TimeSpan? duration);
+        Test AddTestWithQuestions(string name, int difficultyId, TimeSpan? duration, List<Question> questionList);
+        Test GetTestWithQuestionsById(int id);
     }
 }

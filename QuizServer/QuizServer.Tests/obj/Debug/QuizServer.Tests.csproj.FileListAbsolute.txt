@@ -1,3 +1,4 @@
+D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Tests\obj\Debug\QuizServer.Tests.csprojResolveAssemblyReference.cache
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Tests\bin\Debug\ApplicationInsights.config
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Tests\bin\Debug\roslyn\csc.exe
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Tests\bin\Debug\roslyn\csc.exe.config
@@ -88,6 +89,5 @@ D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Tests\bin\Debug\Qu
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Tests\bin\Debug\QuizServer.Model.pdb
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Tests\bin\Debug\QuizServer.Dal.Sql.pdb
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Tests\bin\Debug\EntityFramework.xml
-D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Tests\obj\Debug\QuizServer.Tests.csprojResolveAssemblyReference.cache
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Tests\obj\Debug\QuizServer.Tests.dll
 D:\School\Licenta\QuizServer\QuizServer\QuizServer\QuizServer.Tests\obj\Debug\QuizServer.Tests.pdb

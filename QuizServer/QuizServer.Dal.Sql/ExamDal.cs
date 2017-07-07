@@ -59,5 +59,15 @@ namespace QuizServer.Dal.Sql
                 return exam;
             }
         }
+
+        public void StartTimerById(int id)
+        {
+            using (var context = new QuizEntities())
+            {
+                var exam = context.Exams.FirstOrDefault(c => c.Id == id);
+                exam.StartTime = DateTime.Now;
+                context.SaveChanges();
+            }
+        }
     }
 }

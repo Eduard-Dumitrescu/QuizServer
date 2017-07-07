@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Mail;
 using System.Security.Policy;
 using System.Web.Http;
 using System.Web.Http.Cors;
@@ -42,7 +43,7 @@ namespace QuizServer.Controllers
                 return Request.CreateResponse(HttpStatusCode.BadRequest, messageModel);
             }
 
-            var password = foundUser.Id + user.Password;
+            var password = foundUser.Salt + user.Password;
 
             if (foundUser.Password.Equals(SHA512Encrypter.Encrypt(password), StringComparison.OrdinalIgnoreCase))
             {
@@ -91,8 +92,39 @@ namespace QuizServer.Controllers
             if (isRegistered)
                 return Request.CreateResponse(HttpStatusCode.BadRequest, new { Message = "User already exists" });
             var id = Guid.NewGuid();
-            var password = SHA512Encrypter.Encrypt(id + "1234");
-            _userDal.AddUser(Guid.NewGuid(), userEmail.Email,Guid.NewGuid(), SHA512Encrypter.Encrypt(password),false);
+            var salt = Guid.NewGuid();
+            var password = SHA512Encrypter.Encrypt(salt + "1234");
+            _userDal.AddUser(id, userEmail.Email,salt, password,false);
+
+
+        
+            var message = new MailMessage();
+
+            var centralEmail = "quiz.central94@gmail.com";
+
+            message.To.Add(new MailAddress(userEmail.Email));
+            message.From = new MailAddress(centralEmail);
+
+            message.Subject = "Quiz Password";
+
+            message.Body = "Hello user your password is : 1234";
+
+
+
+            using (var smtp = new SmtpClient())
+            {
+                var credential = new NetworkCredential
+                {
+                    UserName = centralEmail,
+                    Password = "Ab123456bA"  
+                };
+                smtp.Credentials = credential;
+                smtp.Host = "smtp.gmail.com";
+                smtp.Port = 587;
+                smtp.EnableSsl = true;
+                smtp.Send(message);
+
+            }
 
             return Request.CreateResponse(HttpStatusCode.Created);
         }
